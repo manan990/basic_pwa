@@ -1,0 +1,68 @@
+<!-- this is a comment -->
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    
+    <link  
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500"
+      rel="stylesheet"
+    />
+
+    <meta name="theme-color" content="#ffffff" /> 
+
+    <title>PWA WORKSHOP</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="shortcut icon" href="icons/w.png" />
+    <!-- <link rel="manifest" href="./manifest.json" /> -->
+
+  </head>
+
+  <body>
+
+    <header class="center">
+      <h1>
+        WHAT'S THE WORD
+      </h1>
+    </header>
+    
+      <!-- divison with id form -->
+      <div id="form">
+      <label for="searchBox">Enter Word</label><br>
+      <!-- input and its parameter -->
+      <input
+        type="text"
+        name="word"
+        placeholder="Search for any word"
+        id="searchBox"
+      />
+      <!-- span tag with class errorMsg -->
+
+      </span>
+      <button name="SEARCH" onclick="getData()">Search
+
+      <!-- button tag -->
+        <!-- name to be given to the button -->
+      </button>
+    </div>
+
+    <div id="result">
+      <div id="title"></div>
+      <div id="def">
+        <i><div id="partOfSpeech"></div></i> 
+        <div id="defs">
+          <br />
+          <ul id="list"></ul> 
+        </div>
+        <span class="noRes"></span>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <!-- add js file -->
+  </body>
+</html>
